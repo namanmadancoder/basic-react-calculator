@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap");
+* {
+  font-family: "Helvetica", "sans-serif";
+  font-size: 1.4rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(./bg3.jpeg) no-repeat center center/cover;
+}
+.calContainer {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 15rem;
+  height: 23rem;
+  text-align: center;
+  border: 10px solid #101116;
+  background: #1c1c1c;
+  border-radius: 5px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(2rem, auto);
+}
+
+input[type="text"] {
+  height: 5rem;
+  width: 12rem;
+  background-color: #1c1c1c;
+  border: 2px solid #1c1c1c;
+  margin-bottom: 0.4rem;
+  color: #ffffff;
+  text-align: right;
+  font-size: 1.8rem;
+  overflow-x: hidden;
+}
+
+.numbers {
+  background-color: #505050;
+  border: 2px solid #505050;
+  color: #ffffff;
+  border-radius: 300px;
+  margin: 10px;
+}
+
+.numbersOp {
+  background-color: #ff9500;
+  border: 2px solid #ff9500;
+  color: #ffffff;
+  border-radius: 300px;
+  margin: 10px;
+}
+.numbersOp1 {
+  background-color: #d4d4d2;
+  border: 2px solid #d4d4d2;
+  color: #1c1c1c;
+  border-radius: 300px;
+  margin: 10px;
+}
+.container-fluid {
+  font-size: 1rem;
+  background-color: #566288;
+  margin-top: -0.46rem;
+  margin-bottom: -0.8rem;
+  top: 0%;
+  height: 4rem;
+  width: 65rem;
+  margin-left: 0.5rem;
+  border: 1px solid #1c1c1c;
+}
+.primaryHeading {
+  margin-top: 20px;
+
+  font-weight: 700;
+  color: black;
+  -webkit-text-fill-color: rgb(
+    255,
+    255,
+    255
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 2rem;
+  margin-left: 150px;
+}
+#input {
+  max-width: 14rem;
+}
+
+.aboutTxt {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: smaller;
+  margin-left: 230px;
+  margin-top: 100px;
+  margin-right: 150px;
+  font-weight: 400;
+}
+.aboutHeading {
+  align-items: center;
+  justify-content: center;
+  margin-left: 630px;
+  margin-top: 20px;
+  -webkit-text-fill-color: rgb(
+    0,
+    0,
+    0
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.title {
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #d4d4d2;
+  font-weight: 700;
+}
+.desc {
+  text-align: left;
+  justify-content: left;
+  font-size: 15px;
+  color: #d4d4d2;
+  font-weight: 500;
+}
+.btn {
+  position: absolute;
+  width: 75px;
+  font-size: 13px;
+  bottom: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  display: inline-flex;
+  width: 300px;
+  height: 300px;
+  margin-left: 40px;
+  margin-top: 120px;
+  box-shadow: 10px 10px 26px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 26px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 26px -5px rgba(0, 0, 0, 0.75);
+  background: url(./bg1.jpg) no-repeat center center/cover;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.horizontal {
+  display: inline-flex;
+}
+.AddSuggestion {
+  box-shadow: 10px 10px 26px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 26px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 26px -5px rgba(0, 0, 0, 0.75);
+  background-color: #566288;
+  background-image: linear-gradient(339deg, #566288 0%, #dcd0e4 100%);
+  border: 2px solid black;
+  height: 15rem;
+  margin-top: 30px;
+}
+#bb {
+  font-size: 20px;
+  margin-left: 200px;
+  margin-top: 500px;
 }
