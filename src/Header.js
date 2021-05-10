@@ -30,7 +30,7 @@ export const Header = () => {
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link className="nav-link"   style ={myStyle}to="/">Home</Link>
+          <Link className="nav-link-active"   style ={myStyle}to="/">Home</Link>
         </li>
         <li>
         <Link className="nav-link"   style ={myStyle}to="/Suggestions">Suggestions</Link>
