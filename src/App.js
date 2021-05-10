@@ -59,7 +59,7 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/" component={Calculator}></Route>
+          <Route exact path="/basic-react-calculator" component={Calculator}></Route>
 
           <Route exact path="/Suggestions">
             <Suggestions
