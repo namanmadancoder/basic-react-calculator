@@ -22,15 +22,15 @@ export const Header = () => {
             
             <nav  className="navbar navbar-expand-lg navbar-light bg-light"  >
   <div className="container-fluid"  >
-    <Link className="navbar-brand" to="/"  style={myStyle2}>Calculator</Link>
+    <Link className="navbar-brand" to="/basic-react-calculator/"  style={myStyle2}>Calculator</Link>
     
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
       <ul className="navbar-nav">
-        <li className="nav-item">
-          <Link className="nav-link-active"   style ={myStyle}to="/">Home</Link>
+        <li className="nav-item active">
+          <Link className="nav-link"   style ={myStyle}to="/basic-react-calculator/">Home</Link>
         </li>
         <li>
         <Link className="nav-link"   style ={myStyle}to="/Suggestions">Suggestions</Link>
