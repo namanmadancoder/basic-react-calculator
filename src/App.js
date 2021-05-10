@@ -9,6 +9,10 @@ import { About } from "./About";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+
+  function refreshPage(){ 
+    window.location.reload(); 
+}
   let initSuggestion;
   if (localStorage.getItem("") === null) {
     initSuggestion = [];
@@ -58,7 +62,7 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/" component={Calculator}></Route>
+          <Route exact path="/"  refreshPage ={refreshPage} component={Calculator}></Route>
 
           <Route exact path="/Suggestions">
             <Suggestions
